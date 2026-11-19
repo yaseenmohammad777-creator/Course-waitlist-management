@@ -1,0 +1,18 @@
+enroll ada
+enroll grace
+enroll linus
+show
+drop ada
+show
+enroll turing
+record turing ENG-101
+enroll turing
+show
+enroll grace
+enroll turing
+drop ada
+enroll
+drop
+enroll unknown
+show
+quit

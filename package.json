@@ -1,0 +1,10 @@
+{
+  "name": "course-registration-slice",
+  "version": "1.0.0",
+  "private": true,
+  "description": "In-memory course enrollment, drop, and FIFO waitlist promotion",
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test"
+  }
+}
