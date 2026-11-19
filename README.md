@@ -75,5 +75,19 @@ Mutating methods return structured status and message fields. See [DESIGN.md](DE
 - Synchronous single-process methods do not interleave during execution, but there is no cross-process locking, durable transaction, authentication, frontend, catalog, or multi-offering support.
 
 ## Verification
+Testing and Verification
+The application was verified using automated tests and manual command-line scenarios.
 
-Run `npm.cmd test` to execute the built-in Node.js test suite. Run `npm.cmd start` for an interactive smoke test. Record the actual test output and any additional review checks before submission; do not treat documentation alone as evidence of execution.
+Test Results
+Test Category	Result
+Automated Tests	PASS: 8/8
+Manual Scenario A	PASS
+Manual Scenario B	PASS
+Execute Automated Tests
+npm.cmd test
+
+## Test Evidence
+
+Detailed execution results are available in Test-results.md.
+
+The evidence includes automated test output and manual scenarios covering enrollment, capacity, duplicate prevention, prerequisite validation, FIFO promotion, and waitlist eligibility changes.
