@@ -74,17 +74,50 @@ Mutating methods return structured status and message fields. See [DESIGN.md](DE
 - Data is stored only in memory and is reset on process exit.
 - Synchronous single-process methods do not interleave during execution, but there is no cross-process locking, durable transaction, authentication, frontend, catalog, or multi-offering support.
 
+ ## Project Structure
+ course-waitlist-management/
+├── src/
+│   ├── enrollment-service.js
+│   └── cli.js
+├── test/
+│   └── enrollment-service.test.js
+├── evidence/
+│   ├── TEST-OUTPUT.txt
+│   ├── SCENARIO-A-INPUT.txt
+│   ├── SCENARIO-A-OUTPUT.txt
+│   ├── SCENARIO-B-INPUT.txt
+│   └── SCENARIO-B-OUTPUT.txt
+├── README.md
+├── DESIGN.md
+├── AI-USE.md
+├── Test-results.md
+└── package.json
+
 ## Verification
 Testing and Verification
-The application was verified using automated tests and manual command-line scenarios.
+The application was verified through automated tests and manual command-line scenarios.
 
 Test Results
 Test Category	Result
 Automated Tests	PASS: 8/8
 Manual Scenario A	PASS
 Manual Scenario B	PASS
-Execute Automated Tests
+Run Automated Tests
 npm.cmd test
+Run the Application
+npm.cmd start
+Test Evidence
+Detailed test execution results are available in TEST-RESULTS.md.
+
+The evidence includes:
+Automated test execution output
+Enrollment and capacity validation
+Duplicate enrollment prevention
+Prerequisite validation
+FIFO waitlist promotion
+Waitlist eligibility changes
+Invalid and repeated withdrawal handling
+
 
 ## Test Evidence
 
